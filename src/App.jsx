@@ -55,10 +55,8 @@ const addTodo =  (text,category) =>{
     const newTodos = [...todos]
     const filteredTodos = newTodos.filter((todo) => 
     todo.id !== id ? todo : null
-    ); dwadrerrecheugeui sai fora voltei mas bem acompanhado vim chamar aas top vem mas ssó se for agora deasdade miade mil e cem 
-    dinheir nao é problema 
-    ceu se[llfddd xsdedrthjnnnnmisADOISADORA DOS SANTOS NEVES
-    ]
+    );
+
     setTodos(filteredTodos);
   };
 
