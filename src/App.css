@@ -3,11 +3,8 @@ body  {
   background-color: #f4f4f4;
   padding: 30px;
   color: #333;
-  background-color: #d9ccbc;
-  background-image: url(bg.jpeg);
-  background-position: center;
-  background-size: cover;
 }
+
 
 .app {
   max-width: 600px;
@@ -16,6 +13,14 @@ body  {
   padding: 20px 30px;
   border-radius: 10px;
 }
+
+.high-contrast {
+  color: white;
+  font-size: 1.2rem;
+  /* Remova qualquer estilo de fundo que possa conflitar */
+  background: none;
+}
+
 
 h1 {
   text-align: center;

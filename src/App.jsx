@@ -8,6 +8,8 @@ import "./components/css/Todo.css"
 import "./components/css/TodoForm.css"
 import "./components/css/Search.css"
 import "./components/css/Filter.css"
+import Background from "./components/Background.jsx"
+import ClassComponent from "./components/ClassComponent.jsx"
 
 function App() {
   const [todos, setTodos] = useState([
@@ -16,7 +18,6 @@ function App() {
     text: "Desenvolver em ReactJS",
     category: "Trabalho",
     isCompleted: false,
-
   },
   {
     id:2,
@@ -33,9 +34,9 @@ function App() {
 ]);
 
 const [search, setSearch] = useState("");
-
 const [filter, setFilter] = useState("all");
 const [sort, setSort] = useState("Asc");
+
 
 const addTodo =  (text,category) =>{
 
@@ -71,6 +72,7 @@ const addTodo =  (text,category) =>{
   return (
     <div className="app">
       <h1>Lista de Tarefas</h1>
+      <Background />
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className="todo-list">
@@ -100,6 +102,7 @@ const addTodo =  (text,category) =>{
         <todo/>
       </div>
       <TodoForm addTodo={addTodo}/>
+      <ClassComponent />
     </div>
   );
 }
